@@ -104,7 +104,9 @@ body {
 
 .temp-icon{
   width: 20%;
+  
 }
+
 
 .weather-des {
   color: #f06789;
@@ -112,6 +114,16 @@ body {
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.cardDes{
+  
+  color: #f06789;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: capitalize;
 }
 
 .weather-info {
@@ -184,27 +196,7 @@ body {
   font-weight: 500;
 }
 
-.credit {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #8fc9da;
-  width: 100%;
-}
 
-.credit a {
-  color: #f06789;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.credit a:hover {
-  color: #a94b7e;
-}
 
 /* Desktop view */
 @media screen and (min-width: 768px) {
@@ -213,14 +205,7 @@ body {
     margin-bottom: 100px; /* Increased margin for better spacing */
   }
 
-  .credit {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 0;
-    width: auto;
-  }
+ 
 }
 
 /* Tablet view */
@@ -290,16 +275,7 @@ body {
     font-size: 16px;
   }
 
-  .credit {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
-  }
+
 }
 
 /* Mobile view */
@@ -365,14 +341,5 @@ body {
     font-size: 16px;
   }
 
-  .credit {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
-  }
+
 }

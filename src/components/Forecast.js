@@ -73,8 +73,8 @@ function Forecast({ weather }) {
       <div className="temp">
         {data.condition.icon_url && (
           <img
-            src={data.condition.icon_url}
-            alt={data.condition.description}
+             src={data.condition.icon_url}
+            // alt={data.condition.description}
             className="temp-icon"
           />
         )}
@@ -85,15 +85,16 @@ function Forecast({ weather }) {
       </div>
       <p className="weather-des">{data.condition.description}</p>
       <div className="weather-info">
+
         <div className="col">
-          <ReactAnimatedWeather icon="WIND" size="40"/>
+          <ReactAnimatedWeather icon="WIND" size="30"/>
           <div>
             <p className="wind">{data.wind.speed}m/s</p>
             <p>Wind speed</p>
           </div>
         </div>
         <div className="col">
-          <ReactAnimatedWeather icon="RAIN" size="40"/>
+          <ReactAnimatedWeather icon="RAIN" size="30"/>
           <div>
             <p className="humidity">{data.temperature.humidity}%</p>
             <p>Humidity</p>
@@ -116,6 +117,7 @@ function Forecast({ weather }) {
                 )}
                 <p className="day-temperature">
                   {Math.round(day.temperature.minimum)}°/ <span>{Math.round(day.temperature.maximum)}°</span>
+                  <p className="cardDes">{day.condition.description}</p>
                 </p>
               </div>
             ))}
